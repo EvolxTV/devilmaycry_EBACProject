@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Rubik+Mono+One&family=Titan+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+}
+header {
+  min-height: 963px;
+  background-image: url(./images/wallpaper.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section button a {
+  text-decoration: none;
+  color: #dddddd;
+}
+.header-container {
+  width: 1366px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar li {
+  display: inline;
+  margin-left: 48px;
+}
+.nav-bar img {
+  height: 48px;
+}
+.main-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 17%;
+  right: 17%;
+}
+#player {
+  width: 84px;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+.main-information p {
+  font-family: "Paytone One", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #fff;
+}
+.main-information h1 {
+  font-family: "Paytone One", sans-serif;
+
+  background-image: url(./images/texture/texture.jpg);
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+}
+.main-information span {
+  background-image: url(./images/texture/red-texture.png);
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-information button {
+  margin-top: 40px;
+  font-family: "Kanit", sans-serif;
+  font-size: 24px;
+  width: 220px;
+  padding: 17px;
+  background-image: url(./images/texture/red-texture2.png);
+  font-weight: 800;
+  border: none;
+  border-radius: 2px;
+}
+.main-information button:hover {
+  cursor: pointer;
+}
+.register {
+  height: 780px;
+  width: 100vw;
+  background-image: url(./images/alertbg2.png);
+  background-position-y: 30%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register h3 {
+  font-weight: 500;
+  font-size: 45px;
+  color: #fff;
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-check label {
+  color: #fff;
+  margin-right: 50px;
+  font-family: "Kanit", sans-serif;
+}
+.mobile-check input {
+  accent-color: red;
+}
+.register button {
+  margin-top: 30px;
+  font-size: 20px;
+  width: 270px;
+  padding: 9px;
+  background-image: url(./images/texture/red-texture2.png);
+  color: #e6e6e6;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+}
+.register button:hover {
+  cursor: pointer;
+}
+.register-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.register-inputs label {
+  margin-right: 20px;
+  font-weight: 600;
+}
+.register-inputs input {
+  max-width: 300px;
+  height: 25px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-image: url(./images/alertbg2.png);
+}
+footer p {
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+}
